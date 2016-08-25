@@ -23,8 +23,11 @@ void main(){
     printf("]");
     // input array value
     for(i = 0; i < n; i++){ //number of iternation need for bubble up
-    	 for(j = 0; j < n-1; j++){ //n-i for performance you can use n
-    	 	//pickup greater value
+    	 for(j = 0; j < n-i; j++){ //n-i for performance you can use n
+    	 	/*
+    	 	for decending order : pickup greater value for bubble up
+    	 	for accending order : pickup smaller value for bubble up then use <
+    	 	*/
     	 	if(a[j] > a[j+1]){
     	 		temp = a[j]; // for swaping purpose
     	 		a[j] = a[j+1]; // bubble up
