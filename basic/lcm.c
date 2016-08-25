@@ -3,22 +3,25 @@
 
 void main(){
     /*
-    gcd = store gcd latest value
-    i = store divider value
+    lcm = store lcm  value
     */
     int n1, n2,lcm; 
     printf("Enter two positive integers: ");
     scanf("%d %d", &n1, &n2);
-    //i <= n1 && i <= n2 check divider between twos
+
+    //lcm minimum(start) value get
     lcm = n1 > n2 ? n1 : n2;
+
+    //create infinite loop.do'nt worry we break it soon
     while(1){
-        if(minMultiple % n1 == 0 && minMultiple % n2 == 0){
-            printf("%d\n", lcm);
+
+        if(lcm % n1 == 0 && lcm % n2 == 0){
+            printf("lcm of %d and %d is = %d",n1,n2,lcm);
             break;
         }
-        ++lcm;
+        ++lcm; // increment lcm value by 1
 
     }
-    printf("lcm of %d and %d is = %d",n1,n2,lcm);
+    
 
 }
