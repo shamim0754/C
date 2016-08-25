@@ -144,7 +144,7 @@ void main(){
 }
 ```
 ### Factorial ###
-5! = 5*4*3*2*1 = 120 <br/>
+5! = 5x4x3x2x1 = 120 <br/>
 0! = 1
 ```C
 #include <stdio.h>
@@ -160,9 +160,9 @@ int factorial(int n){
 }
 void main(){
     /*
-    num = number that need find factorial
-    fact = factorial result
-    i = factorial multiple value
+    num = store number that need find factorial
+    fact = store factorial result
+    i = store factorial multiple value
     */
     int num,fact = 1,i; 
     printf("Enter a number \n");
@@ -177,7 +177,37 @@ void main(){
     printf("Factorial of !%d=%d",num,fact);
 
 }
-
-    
 ```
+### 1 + 2 + 2 ......+n ###
+
+```
+#include <stdio.h>
+#include <conio.h>
+
+void main(){
+    /*
+    max = store maximum number of series
+    sum = store summation result
+    i = store individual value
+    */
+    int max,i;
+    int sum=0;
+
+    printf("Enter the n i.e. max values of series: ");
+    scanf("%d",&max);
+
+    printf("Sum of the series: ");
+
+    for(i =1;i <= max;i++){
+         printf("%d ",i);
+         if(i != max)
+            printf(" + ");
+         sum += i;
+     }
+     printf(" = %d ",sum);
+
+}
+```    
+
+
 
