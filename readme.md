@@ -42,5 +42,5 @@ void main(){
     printf("]");
 }
 ```
-### Insertion Sort ###
- [Alogrithm](http://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm).
+### Merge Sort ###
+ [Alogrithm](http://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm).
