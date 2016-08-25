@@ -98,4 +98,20 @@ void main(){
 
 }
 ```
+### LCM(Lowest Common Multiple) ###
+
+| Mutiple of 5 | Mutiple of 8 |
+| --- | --- |
+| 5 x 1 = 5 | 8 x 1 = 8|
+| 5 x 2 = 10 | 8 x 2 = 16|
+| 5 x 3 = 15 | 8 x 3 = 24|
+| 5 x 4 = 20 | 8 x 4 = 32|
+| 5 x 5 = 25 | 8 x 5 = 40|
+| 5 x 6 = 30 | |
+| 5 x 7 = 35 | |
+| 5 x 8 = 40 | |
+
+CM = 40 <br/>
+LCM = 40
+
 
