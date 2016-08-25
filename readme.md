@@ -207,11 +207,16 @@ void main(){
      printf(" = %d ",sum);
 
 }
-``` 
-### Mattrix Multiplication ###  
-A          B    <br>
-* 1 3    * 1 3
-* 4 4    * 4 4 
+```
+
+### Mattrix Multiplication ### 
+A=  <br/>
+1   2 <br/>   
+3   4 <br/>
+B=  <br/>
+5   6 <br/>   
+7   8 <br/>
+
 
 
 
