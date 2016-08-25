@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
-
+void bubble_sort(int[], int);
 void main(){
-	int n,a[20],i,j,temp;
+	int n,a[20],i;
 
     printf("Enter total numbers of elements: ");
     scanf("%d",&n);
@@ -13,26 +13,33 @@ void main(){
     for(i = 0; i < n; i++){
       scanf("%d",&a[i]);
     }
+    bubble_sort(a,n);
+    
+}
+void bubble_sort(int iarr[], int num) {
+    int i,j,temp;
+
     printf("Before sort : [ ");
     // input array value
-    for(i = 0; i < n; i++){
-      printf("%d ",a[i]);
+    for(i = 0; i < num; i++){
+      printf("%d ",iarr[i]);
     }
     printf("]");
-    // input array value
-    for(i = 0; i < n; i++){ //number of iternation need for bubble up
-    	 for(j = 0; j < n-1; j++){ //n-i for performance you can use n
-    	 	//pickup greater value
-    	 	if(a[j] > a[j+1]){
-    	 		temp = a[j]; // for swaping purpose
-    	 		a[j] = a[j+1]; // bubble up
-    	 		a[j+1] = temp; // swap
-    	 	}
-    	 }
+    
+    for(i = 0; i < num; i++){ //number of iternation need for bubble up
+         for(j = 0; j < num-1; j++){ //n-i for performance you can use n
+            //pickup greater value
+            if(iarr[j] > iarr[j+1]){
+                temp = iarr[j]; // for swaping purpose
+                iarr[j] = iarr[j+1]; // bubble up
+                iarr[j+1] = temp; // swap
+            }
+         }
     }
+
     printf("After sort : [ ");
-    for(i = 0; i < n; i++){
-      printf("%d ",a[i]);
+    for(i = 0; i < num; i++){
+      printf("%d ",iarr[i]);
     }
     printf("]");
 }
