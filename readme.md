@@ -188,7 +188,7 @@ void main(){
     /*
     max = store maximum number of series
     sum = store summation result
-    i = store individual value
+    i = store individual value of series
     */
     int max,i;
     int sum=0;
@@ -207,7 +207,11 @@ void main(){
      printf(" = %d ",sum);
 
 }
-```    
+``` 
+### Mattrix Multiplication ###  
+A          B    <br>
+* 1 3    * 1 3
+* 4 4    * 4 4 
 
 
 
