@@ -59,7 +59,7 @@ void main(){
     //if divible by 400
     if(y % 400 == 0)
         printf("%d is a leap year", y);
-    //if divible not by 100
+    //if divible by 100
     else if(y % 100 == 0)
         printf("%d is a not leap year", y);
 
@@ -71,3 +71,31 @@ void main(){
 
 }
 ```
+### GCD(Greatest Common Divisor)/HCF ###
+6 divisor = 1,2,3,6 and 10 divisor = 1,2,5,10 <br>
+CD = 1,2<br>
+GCD = 2
+
+```C
+#include <stdio.h>
+#include <conio.h>
+
+void main(){
+    /*
+    gcd = store gcd latest value
+    i = store divider value
+    */
+    int n1, n2, gcd,i; 
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &n1, &n2);
+    //i <= n1 && i <= n2 check divider between twos
+    for(i = 1; i <= n1 && i <= n2; i++){
+        // divide numbers by divider
+        if(n1 % i == 0 && n2 % i == 0)
+            gcd = i; // store i as gcd
+    }
+    printf("gcd of %d and %d is = %d",n1,n2,gcd);
+
+}
+```
+

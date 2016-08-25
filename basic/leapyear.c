@@ -10,7 +10,7 @@ void main(){
     //if divible by 400
     if(y % 400 == 0)
     	printf("%d is a leap year", y);
-    //if divible not by 100
+    //if divible by 100
 	else if(y % 100 == 0)
 		printf("%d is a not leap year", y);
 
