@@ -210,12 +210,7 @@ void main(){
 ```
 
 ### Mattrix Multiplication ### 
-A=  <br/>
-1   2 <br/>   
-3   4 <br/>
-B=  <br/>
-5   6 <br/>   
-7   8 <br/>
+![alt text](image/matrix-multiply-order.gif "Logo Title Text 1")
 
 
 
