@@ -5,7 +5,7 @@ void main(){
 	/*
 	n = store number that needs to check palindrome
 	reverse = store reverse result
-	i = store reminder
+	r = store reminder
 	dividend = store division result 
 	*/
 	int n,reverse=0,r,dividend;
