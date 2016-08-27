@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
 
 void main(){
 	/*
@@ -9,21 +10,21 @@ void main(){
 	dividend = store division result
 	i = store power value 
 	*/
-	int n,decimal=0,r,dividend,i;
+	int n,decimal=0,r=0,i=0,temp;
 
     printf("Enter a binary to convert decimal ? ");  
 	scanf("%d",&n);
-	//get initial dividend
-	dividend = n;
+	temp=n;
 
 	//until dividend greater than 0
-    while(dividend>0)  { 
+    while(n != 0)  { 
     	//reminder 
-		r=dividend%2;
+		r=n%10;
 		//generate reverse  
-		binary=(binary*10)+r; 
+		decimal += r * pow(2,i); 
 		//division result 
-		dividend=dividend/2;  
+		n = n/10;
+		i++;  
 	}
-	printf("%d binary = %d \n",n,binary );
+	printf("%d binary = %d \n",temp,decimal );
 }
