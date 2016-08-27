@@ -607,7 +607,7 @@ void main(){
 
 ```
 ### FLOYD'S TRIANGLE ###
-![alt text](image/floyd.png"Logo Title Text 1")
+![alt text](image/floyd.png "Logo Title Text 1")
 ```C
 #include <stdio.h>
 #include <conio.h>
