@@ -518,7 +518,7 @@ void main(){
     scanf("%lf %lf %lf",&a, &b, &c);
 
     determinant = b*b-4*a*c;
-    
+    if(determinant  > 0)
         root1 = (-b+sqrt(determinant))/(2*a);
         root2 = (-b-sqrt(determinant))/(2*a);
 
@@ -656,6 +656,23 @@ int main(){
     return 0;
 } 
 
+```
+### String input ###
+
+```C
+#include <stdio.h>  
+#include <conio.h>  
+  
+void main(){  
+    char name[100];  
+    puts("Enter your name: ");  
+    gets(name); //reads string from user  
+    printf("Your name is: ");  
+    puts(name);  //displays string 
+    int count = strlen(name);
+    printf("%d\n", count); 
+    getch();  
+} 
 ```
 
 
