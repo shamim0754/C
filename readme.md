@@ -584,6 +584,80 @@ void main(){
 }
 ```
 
+### Perfect Number ###
+the sum of its positive divisors excluding the number itself
+6 divisor 1,3,2(sum = 6)
+
+```C
+#include <stdio.h>
+#include <conio.h>
+
+void main(){
+    /*
+    n = store number that needs to check perfect
+    sum = store summation result
+    i = store individual value
+    */
+    int n,i=1,sum=0;
+
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    while(i<n){
+       if(n%i==0)
+           sum += i;
+      i++;
+    }
+    if(sum == n)
+      printf("%d is a perfect number",i);
+    else
+      printf("%d is not a perfect number",i);
+}
+```
+### Display own source code ###
+```C
+#include<stdio.h>
+
+int main(){
+    FILE *fp;
+    char c;
+
+    fp = fopen(__FILE__,"r");
+ 
+    do{
+         c= getc(fp);
+         putchar(c);
+    }
+    while(c!=EOF);
+
+    fclose(fp);
+   
+    return 0;
+}
+```
+
+### pass by value and reference ###
+
+```C
+#include <stdio.h>
+void passref(int *a){
+    *a += 2;
+}
+void passval(int a){
+    a += 2;
+}
+int main(){
+    int a=5;
+    passval(a);
+    printf("pass value : %d\ln",a);
+
+    passref(&a);
+    printf("Pass ref : %d",a);
+    return 0;
+} 
+
+```
+
 
 
 
