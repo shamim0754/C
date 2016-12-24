@@ -332,6 +332,19 @@ void main(){
 
 ```
 
+### Union ###
+Like structure, Union in c language is a user defined datatype that is used to hold different type of elements.
+
+But it doesn't occupy sum of all members size. It occupies the memory of largest member only
+
+```C
+union employee  
+{   int id;  
+    char name[50];  
+    float salary;  
+}; 
+```
+
 ### Leap Year ###
  ```C
  #include <stdio.h>
