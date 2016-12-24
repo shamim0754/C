@@ -8,7 +8,7 @@ void passval(int a){
 int main(){
     int a=5;
     passval(a);
-    printf("pass value : %d",a);
+    printf("pass value : %d\ln",a);
 
     passref(&a);
     printf("Pass ref : %d",a);

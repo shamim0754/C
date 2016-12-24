@@ -22,21 +22,6 @@ void main(){
      	 sum += i;
      }
      printf(" = %d ",sum);
-     
-	/*
-	temp = n; // temp need for final comparison
-
-	while(n > 0 ){
-		r = n % 2;
-		sum = sum * 10 + r;
-		//sum += r * r * r;
-		n = n / 2; 
-	}
-	//if(temp == sum)
-		printf("%d is a binary\n",sum );
-	
-	*/
-
 }
 
 	

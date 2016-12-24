@@ -9,6 +9,12 @@ void main(){
 }
 
 ```
+### Function ###
+
+Advantage :
+
+1. Code Reusability
+2. we don't need to write much code so it makes the code optimized
 
 ### Leap Year ###
  ```C
