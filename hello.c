@@ -4,9 +4,12 @@ int add(int n1,int n2) {
     return n1 + n2;
 }  
 void main(){
-    int num1,num2;
-	printf("Enter two number for add : ");
-    scanf("%d %d",&num1,&num2);
-    printf("sum of %d and %d = %d",num1,num2,add(num1,num2));
-    getch();    
+    int number=50;  
+    int *p;   // pointer declare   
+    p=&number;//stores the address of number variable  
+          
+    printf("Address of number variable is %x \n",&number);  
+    printf("Address of p variable is %x \n",p);  
+    printf("Value of p variable is %d \n",*p);   // pointer value
+      
 }

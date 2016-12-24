@@ -13,6 +13,23 @@ void main(){
 ### Pointers ###
 Pointers.points to an address(memory location) of a value.It reduces the code and improves the performance(we can dynamically allocate memory using malloc() and calloc() functions using pointer)
 
+```c
+#include <stdio.h>      
+#include <conio.h>    
+void main(){      
+int number=50; // pointer declare 
+int *p;    
+clrscr();  
+p=&number;//stores the address of number variable  
+      
+printf("Address of number variable is %x \n",&number);  
+printf("Address of p variable is %x \n",p);  //
+printf("Value of p variable is %d \n",*p);  //value print
+  
+getch();      
+}      
+```
+
 ### Runtime memory allocation using pointer ###
 ```C
 #include <stdio.h>
