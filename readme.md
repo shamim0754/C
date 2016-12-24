@@ -347,11 +347,30 @@ union employee
 
 ### File Handling ###
 
-Function | Syntax
------------- | -------------
-fopen() | `FILE *fopen( const char * filename, const char * mode );  `
-fclose() | `int fclose( FILE *fp );`
-fprintf() ! `int fprintf(FILE *stream, const char *format [, argument, ...])  `
+Function | Syntax | purpose
+------------ | ------------- | ----------
+fopen() | `FILE *fopen( const char * filename, const char * mode );  ` | used to open a file.
+fclose() | `int fclose( FILE *fp );` | used to close a file
+fprintf() |  `int fprintf(FILE *stream, const char *format [, argument, ...])  ` | used to write set of characters into file
+fscanf() |  `int fscanf(FILE *stream, const char *format [, argument, ...])  ` | used to read set of characters from file
+
+```C
+#include <stdio.h>
+#include <conio.h>
+
+void main(){
+   FILE *fp; 
+   //opening file 
+   fp = fopen("file.txt", "w");
+   //writing data into file  
+   fprintf(fp, "file handling \n"); 
+   //closing file  
+   fclose(fp);   
+
+}
+```
+it creates file.txt file at current directory
+
 
 ### Leap Year ###
  ```C
