@@ -70,7 +70,7 @@ void main(){
 In call by value, original value(function param) is not modified. in the above example num1,num2 can't modified 
 
 ### Function call by referece ###
-In call by referece, original value(function param) not modified. 
+In call by referece, original value(function param) is modified. 
 
 ```C
 #include <stdio.h>
@@ -85,6 +85,37 @@ void main(){
     getch();
 } 
 
+```
+### Recursion ###
+
+When function is called within the same function, it is known as recursion function.
+5! = 5x4x3x2x1 = 120 <br/>
+0! = 1
+
+```C
+#include <stdio.h>
+#include <conio.h>
+
+int factorial(int n){
+    if(n < 0)
+        return -1; //wrong input
+    else if(n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1); //call in same function
+}
+void main(){
+    /*
+    num = store number that need find factorial
+    */
+    int num; 
+    printf("Enter a number \n");
+    scanf("%d",&num);
+   
+    //using recursive function     
+    printf("Factorial of !%d=%d",num,factorial(num));
+
+}
 ```
 
 ### Leap Year ###
