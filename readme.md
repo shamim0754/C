@@ -345,6 +345,14 @@ union employee
 }; 
 ```
 
+### File Handling ###
+
+Function | Syntax
+------------ | -------------
+fopen() | `FILE *fopen( const char * filename, const char * mode );  `
+fclose() | `int fclose( FILE *fp );`
+fprintf() ! `int fprintf(FILE *stream, const char *format [, argument, ...])  `
+
 ### Leap Year ###
  ```C
  #include <stdio.h>
