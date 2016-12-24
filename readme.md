@@ -66,6 +66,27 @@ void main(){
     getch();    
 }
 ```
+### Function call by value ###
+In call by value, original value(function param) is not modified. in the above example num1,num2 can't modified 
+
+### Function call by referece ###
+In call by referece, original value(function param) not modified. 
+
+```C
+#include <stdio.h>
+void passref(int *a){
+    *a += 2;
+}
+
+void main(){
+    int a=5;
+    passref(&a);
+    printf("Pass ref : %d",a);
+    getch();
+} 
+
+```
+
 ### Leap Year ###
  ```C
  #include <stdio.h>
@@ -661,27 +682,7 @@ int main(){
 }
 ```
 
-### pass by value and reference ###
 
-```C
-#include <stdio.h>
-void passref(int *a){
-    *a += 2;
-}
-void passval(int a){
-    a += 2;
-}
-int main(){
-    int a=5;
-    passval(a);
-    printf("pass value : %d\ln",a);
-
-    passref(&a);
-    printf("Pass ref : %d",a);
-    return 0;
-} 
-
-```
 ### String input ###
 
 ```C
