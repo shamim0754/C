@@ -3,10 +3,13 @@
 
 void main(){
    FILE *fp; 
+   char buff[255];
    //opening file 
-   fp = fopen("file.txt", "w");
-   //writing data into file  
-   fprintf(fp, "file handling \n"); 
+   fp = fopen("file.txt", "r");
+   //reading data into file  
+   while(fscanf(fp, "%s", buff)!=EOF)  
+      printf("%s ", buff );  
+     
    //closing file  
    fclose(fp);   
 

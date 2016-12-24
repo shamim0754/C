@@ -354,6 +354,8 @@ fclose() | `int fclose( FILE *fp );` | used to close a file
 fprintf() |  `int fprintf(FILE *stream, const char *format [, argument, ...])  ` | used to write set of characters into file
 fscanf() |  `int fscanf(FILE *stream, const char *format [, argument, ...])  ` | used to read set of characters from file
 
+### Write Content into FIle ###
+
 ```C
 #include <stdio.h>
 #include <conio.h>
@@ -371,6 +373,27 @@ void main(){
 ```
 it creates file.txt file at current directory
 
+### Read Content into FIle ###
+
+```C
+#include <stdio.h>
+#include <conio.h>
+
+void main(){
+   FILE *fp; 
+   char buff[255];
+   //opening file 
+   fp = fopen("file.txt", "r");
+   //reading data into file  
+   while(fscanf(fp, "%s", buff)!=EOF)  
+      printf("%s ", buff );  
+     
+   //closing file  
+   fclose(fp);   
+
+}
+
+```
 
 ### Leap Year ###
  ```C
@@ -470,42 +493,9 @@ void main(){
 
 }
 ```
-### Factorial ###
-5! = 5x4x3x2x1 = 120 <br/>
-0! = 1
-```C
-#include <stdio.h>
-#include <conio.h>
 
-int factorial(int n){
-    if(n < 0)
-        return -1; //wrong input
-    else if(n == 0)
-        return 1;
-    else
-        return n * factorial(n - 1);
-}
-void main(){
-    /*
-    num = store number that need find factorial
-    fact = store factorial result
-    i = store factorial multiple value
-    */
-    int num,fact = 1,i; 
-    printf("Enter a number \n");
-    scanf("%d",&num);
-    /*if(num == 0)
-    else    
-        for(i = num; i > 0; i--)
-            fact = i * fact;
-    */
-    //using recursive function
-    fact = factorial(num);      
-    printf("Factorial of !%d=%d",num,fact);
 
-}
-```
-### 1 + 2 + 2 ......+n ###
+### 1 + 2 + 3 ......+n ###
 
 ```
 #include <stdio.h>
