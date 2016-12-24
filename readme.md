@@ -235,6 +235,30 @@ void main(){
 
 ```
 
+### Structure ###
+
+Structure is a user defined datatype that allows you to hold different type of elements. It works like a template in C++ and class in Java
+
+```C
+#include <stdio.h>
+#include <conio.h>
+struct employee  {   
+    int id;  
+    char name[50];  
+    float salary;  
+};
+void main(){
+    struct employee e1; 
+    e1.id=101; // or e1->id=101
+    strcpy(e1.name, "Sonoo Jaiswal");
+    e1.salary=25000;
+    printf( "employee id : %d\n", e1.id);  
+    printf( "employee name : %s\n", e1.name);        
+    printf( "employee salary : %f\n", e1.salary);        
+}
+
+```
+
 ### Leap Year ###
  ```C
  #include <stdio.h>
