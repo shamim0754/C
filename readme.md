@@ -29,6 +29,35 @@ printf("Value of p variable is %d \n",*p);  //value print
 getch();      
 }      
 ```
+### NULL Pointer ##
+
+`int *p=NULL;`
+
+### Pointer to Pointer ###
+
+ a pointer refers to the address of another pointer.
+`int **p2; `
+
+```C
+#include <stdio.h>        
+#include <conio.h>      
+void main(){        
+int number=50;    
+int *p;//pointer to int  
+int **p2;//pointer to pointer      
+clrscr();    
+p=&number;//stores the address of number variable    
+p2=&p;  
+        
+printf("Address of number variable is %x \n",&number);    
+printf("Address of p variable is %x \n",p);    
+printf("Value of *p variable is %d \n",*p);    
+printf("Address of p2 variable is %x \n",p2);    
+printf("Value of **p2 variable is %d \n",**p);    
+    
+getch();        
+}        
+```
 
 ### Runtime memory allocation using pointer ###
 ```C
