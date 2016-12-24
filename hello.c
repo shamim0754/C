@@ -4,12 +4,14 @@ int add(int n1,int n2) {
     return n1 + n2;
 }  
 void main(){
-    int number=50;  
-    int *p;   // pointer declare   
-    p=&number;//stores the address of number variable  
-          
-    printf("Address of number variable is %x \n",&number);  
-    printf("Address of p variable is %x \n",p);  
-    printf("Value of p variable is %d \n",*p);   // pointer value
-      
+    int i,n,*ptr;  
+    printf("Enter number of elements");
+    scanf("%d",&n);
+    int *arr = (int *) malloc(sizeof(int *) * n);
+    printf("size is %d\n",sizeof(arr));
+    printf("Enter elements of array :");
+    for(i = 0;i<n;i++)
+        scanf("%d",&arr[i]);
+    for(i=0;i<n;i++)
+        printf("%d", arr[i]);          
 }

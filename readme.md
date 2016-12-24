@@ -59,7 +59,7 @@ getch();
 }        
 ```
 
-### Runtime memory allocation using pointer ###
+### Runtime memory allocation ###
 ```C
 #include <stdio.h>
 #include <conio.h>
@@ -162,6 +162,32 @@ void main(){
     printf("Factorial of !%d=%d",num,factorial(num));
 
 }
+```
+### String ###
+
+String in C language is an array of characters that is terminated by \0 (null character).
+There are two ways to declare string in c language.
+
+1. By char array `char s1[]={'s','h','a','m','i','m','\0'}`
+2. By string literal `char s1[]="shamim"`
+
+
+### String input ###
+
+```C
+#include <stdio.h>  
+#include <conio.h>  
+  
+void main(){  
+    char name[100];  
+    puts("Enter your name: ");  
+    gets(name); //reads string from user  
+    printf("Your name is: ");  
+    puts(name);  //displays string 
+    int count = strlen(name);
+    printf("%d\n", count); 
+    getch();  
+} 
 ```
 
 ### Leap Year ###
@@ -760,23 +786,7 @@ int main(){
 ```
 
 
-### String input ###
 
-```C
-#include <stdio.h>  
-#include <conio.h>  
-  
-void main(){  
-    char name[100];  
-    puts("Enter your name: ");  
-    gets(name); //reads string from user  
-    printf("Your name is: ");  
-    puts(name);  //displays string 
-    int count = strlen(name);
-    printf("%d\n", count); 
-    getch();  
-} 
-```
 
 
 
