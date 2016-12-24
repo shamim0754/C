@@ -6,11 +6,19 @@ struct employee  {
     float salary;  
 };
 void main(){
-    struct employee e1; 
-    e1.id=101; // or e1->id=101
-    strcpy(e1.name, "Sonoo Jaiswal");
-    e1.salary=25000;
-    printf( "employee id : %d\n", e1.id);  
-    printf( "employee name : %s\n", e1.name);        
-    printf( "employee salary : %f\n", e1.salary);        
+    struct employee emp[2]; 
+    int i;
+    for(i = 0;i < 2;i++){
+        scanf("%d",&emp[i].id);
+        scanf("%s",&emp[i].name);
+        scanf("%f",&emp[i].salary);
+    }
+
+    //print
+    for(i = 0;i < 2;i++){
+        printf("%d",emp[i].id);
+        printf("%s",emp[i].name);
+        printf("%f\ln",emp[i].salary);
+    }
+
 }
