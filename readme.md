@@ -733,28 +733,28 @@ main()  {
 void main(){
     /*
     n = store number that needs convert binary
-    binary = store binary result
-    r = store reminder
-    dividend = store division result 
+    binaryNum = store remainder
+    dividend = store division result
     */
-    int n,binary=0,r,dividend;
+    int n,binaryNum[1000],dividend;
 
-    printf("Enter a number to convert binary ? ");  
+    printf("Enter a number to convert binary ? \n");
     scanf("%d",&n);
     //get initial dividend
     dividend = n;
 
-    //until dividend greater than 0
-    while(dividend>0)  { 
-        //reminder 
-        r=dividend%2;
-        //generate reverse  
-        binary=(binary*10)+r; 
-        //division result 
-        dividend=dividend/2;  
+    int i = 0;
+    while(dividend > 0)  {
+        binaryNum[i] = dividend%2;
+        //division result
+        dividend /= 2;
+        i++;
     }
-    printf("%d binary = %d \n",n,binary );
+    printf("%d binary = ",n);
+    for(int j = i - 1; j >=0 ; j--)
+        printf("%d", binaryNum[j]);
 }
+
 ```
 ### binary To Decimal ###
 101 (binary) = 5
